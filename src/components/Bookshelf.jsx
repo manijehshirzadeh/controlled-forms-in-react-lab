@@ -32,7 +32,7 @@ const Bookshelf = () => {
           <h3>Add a Book</h3>
 
           {/* Create a add new form  */}
-          <form>
+          <form className="formDiv">
             <label htmlFor="title">Title: </label>
             <input
               id="title"
@@ -56,9 +56,9 @@ const Bookshelf = () => {
         <div className="bookCardsDiv">
           {/* Map through books */}
           {books.map((book) => (
-            <div key={book.title}>
-              <h2>{book.title}</h2>
-              <p> by {book.title}</p>
+            <div key={book.title} className="bookCard">
+              <h2 className="card-title">{book.title}</h2>
+              <p className="card-text"> by {book.author}</p>
             </div>
           ))}
         </div>

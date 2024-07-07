@@ -1,5 +1,6 @@
 import "../App.css";
 import Bookshelf from "./Bookshelf.jsx";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   return (
